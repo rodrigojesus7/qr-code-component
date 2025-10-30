@@ -1,8 +1,8 @@
 :root {
     --card-color: hsl(0, 0%, 100%);
     --background-color: hsl(212, 45%, 89%);
-    --texto-destaque: hsl(216, 15%, 48%);
-    --texto: hsl(218, 44%, 22%)
+    --texto: hsl(216, 15%, 48%);
+    --texto-destaque: hsl(218, 44%, 22%)
 }
 
 body {
@@ -16,17 +16,46 @@ body {
 }
 
 .card {
+    display: flex;
+    flex-direction: column;
     background-color: var(--card-color);
     height: 50rem;
-    width: 40rem;
-    padding: 3rem;
+    width: 32rem;
+    padding: 1.6rem;
     border-radius: 2rem;
-
+    gap: 2.1rem;
+    box-shadow: 1rem 1rem 4rem rgba(0, 0, 0, 0.062);
 }
 
 
-.img {
-    max-height: 100%;
+.qrcode {
     max-width: 100%;
+    border-radius: 1rem;
+}
 
+
+.texts-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-height: 100%;
+    gap: 1.6rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.texts-box h1 {
+    font-size: 2.2rem;
+    line-height: 2.6rem;
+    color: var(--texto-destaque);
+}
+
+.texts-box p {
+    font-size: 1.45rem;
+    letter-spacing: 0.042rem;
+    line-height: 2.11rem;
+    font-weight: 400;
+    color: var(--texto);
 }
