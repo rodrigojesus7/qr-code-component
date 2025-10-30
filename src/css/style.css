@@ -1,0 +1,32 @@
+:root {
+    --card-color: hsl(0, 0%, 100%);
+    --background-color: hsl(212, 45%, 89%);
+    --texto-destaque: hsl(216, 15%, 48%);
+    --texto: hsl(218, 44%, 22%)
+}
+
+body {
+    font-family: Outfit, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--background-color);
+    padding: 3rem;
+}
+
+.card {
+    background-color: var(--card-color);
+    height: 50rem;
+    width: 40rem;
+    padding: 3rem;
+    border-radius: 2rem;
+
+}
+
+
+.img {
+    max-height: 100%;
+    max-width: 100%;
+
+}
